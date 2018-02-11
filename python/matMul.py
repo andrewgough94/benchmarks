@@ -5,10 +5,10 @@ n = 10000
 
 x = np.random.randn(n,n)
 
-#print(str(x))
-
+print("Matmul start")
 a = time.time()
+y = np.matmul(x, x)
 
-x = x.dot(x)
+#print(str(x))
 
 print(time.time() - a)
